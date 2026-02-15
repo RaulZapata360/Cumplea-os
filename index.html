@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Mi Amor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #fff5f7 0%, #fce7f3 100%);
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .birthday-font {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        /* Corazones Flotantes de Fondo */
+        .heart-bg {
+            position: fixed;
+            top: -10%;
+            color: #fb7185;
+            user-select: none;
+            z-index: 0;
+            animation: float 10s linear infinite;
+            opacity: 0.3;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 0.3;
+            }
+
+            90% {
+                opacity: 0.3;
+            }
+
+            100% {
+                transform: translateY(110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .main-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(15px);
+            border-radius: 3rem;
+            padding: 2.5rem;
+            width: 90%;
+            max-width: 480px;
+            box-shadow: 0 25px 50px -12px rgba(219, 39, 119, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 15px;
+            aspect-ratio: 1;
+            margin: 20px 0;
+        }
+
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1.5rem;
+            background: #fdf2f8;
+            border: 3px solid white;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .img-container:hover {
+            transform: scale(1.03);
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .label-tag {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #be185d;
+        }
+
+        /* Modal Estilo iPhone */
+        #modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal-card {
+            background: white;
+            border-radius: 2.5rem;
+            max-width: 400px;
+            width: 100%;
+            overflow: hidden;
+            animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @keyframes pop {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .loader {
+            width: 40px;
+            height: 40px;
+            border: 3px solid #fce7f3;
+            border-top: 3px solid #ec4899;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Corazones de fondo generados por JS -->
+    <div id="heart-container"></div>
+
+    <div class="main-card">
+        <h2 class="text-pink-500 font-semibold tracking-widest text-xs uppercase mb-2">Para el amor de mi vida</h2>
+        <h1 class="birthday-font text-5xl text-gray-800 mb-6">¡Feliz Cumpleaños!</h1>
+        <p class="text-gray-500 text-sm mb-6">Prepara las maletas, hoy te toca elegir nuestra próxima aventura.
+            <br><b>¿A dónde nos vamos a celebrar?</b></p>
+
+        <div class="photo-grid">
+            <!-- Santiago -->
+            <div class="img-container" onclick="openDetails('santiago')">
+                <div id="load-santiago" class="loader"></div>
+                <img id="img-santiago" class="hidden" src="" alt="Santiago">
+                <span class="label-tag">Santiago</span>
+            </div>
+
+            <!-- Pucón -->
+            <div class="img-container" onclick="openDetails('pucon')">
+                <div id="load-pucon" class="loader"></div>
+                <img id="img-pucon" class="hidden" src="" alt="Pucón">
+                <span class="label-tag">Pucón</span>
+            </div>
+
+            <!-- Atacama -->
+            <div class="img-container" onclick="openDetails('atacama')">
+                <div id="load-atacama" class="loader"></div>
+                <img id="img-atacama" class="hidden" src="" alt="Atacama">
+                <span class="label-tag">Atacama</span>
+            </div>
+
+            <!-- Frutillar -->
+            <div class="img-container" onclick="openDetails('frutillar')">
+                <div id="load-frutillar" class="loader"></div>
+                <img id="img-frutillar" class="hidden" src="" alt="Frutillar">
+                <span class="label-tag">Frutillar</span>
+            </div>
+        </div>
+
+        <p id="status-text" class="text-pink-400 text-[10px] italic animate-pulse">Pintando nuestros sueños con IA...
+        </p>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" onclick="closeModal()">
+        <div class="modal-card" onclick="event.stopPropagation()">
+            <div id="modalImg" class="h-64 bg-cover bg-center"></div>
+            <div class="p-8 text-center">
+                <h2 id="modalTitle" class="text-4xl font-bold text-gray-800 birthday-font mb-4"></h2>
+                <ul id="modalList" class="text-gray-600 space-y-2 mb-8 text-sm"></ul>
+                <button onclick="confirmDest()"
+                    class="w-full bg-pink-500 text-white py-4 rounded-2xl font-bold hover:bg-pink-600 transition shadow-lg shadow-pink-200">
+                    ¡Elegir este destino! ❤️
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // CONFIGURACIÓN
+        const apiKey = "AIzaSyAbHJO6nIUcQWD-ZgAhtwwSSywLiDxTtK8"; // Coloca tu clave aquí
+
+        const destinations = {
+            santiago: {
+                name: "Santiago",
+                prompt: "Vibrant aerial view of Fantasilandia amusement park Santiago Chile, sunset, cinematic 8k photography",
+                fallback: "images/santiago.jpg",
+                activities: [
+                    "🎢 Gritos y Adrenalina pura en Fantasilandia",
+                    "🚠 Santiago a tus pies: Teleférico San Cristóbal",
+                    "🏙️ Tocando el cielo en Sky Costanera"
+                ]
+            },
+            pucon: {
+                name: "Pucón",
+                prompt: "Villarrica volcano reflected in blue lake, Pucon Chile, snow peak, lush nature, ultra realistic",
+                fallback: "images/pucon.jpg",
+                activities: [
+                    "💙 Magia turquesa en Ojos del Caburgua",
+                    "🌋 Desafío épico: Trekking al Volcán Villarrica",
+                    "🌿 Relax místico en Termas Geométricas y Licanray"
+                ]
+            },
+            atacama: {
+                name: "San Pedro",
+                prompt: "Moon Valley Atacama Desert, starry night sky, orange dunes, professional travel photography",
+                fallback: "images/atacama.jpg",
+                activities: [
+                    "🌙 Caminata lunar en el Valle de la Luna",
+                    "✨ Noche mágica bajo el cielo más estrellado del mundo",
+                    "🌬️ Amanecer energético en los Geysers del Tatio"
+                ]
+            },
+            frutillar: {
+                name: "Frutillar",
+                prompt: "Teatro del Lago Frutillar Chile, Osorno volcano background, flower gardens, lake edge, sunny day",
+                fallback: "images/frutillar.jpg",
+                activities: [
+                    "🎼 Arte y vistas soñadas en Teatro del Lago",
+                    "🍰 La ruta más dulce: Kuchen frente al volcán",
+                    "⛵ Paseo romántico por la bahía al atardecer"
+                ]
+            }
+        };
+
+        const imageCache = {};
+
+        // Función para generar o usar fallback
+        async function loadImage(key) {
+            const data = destinations[key];
+            const imgElement = document.getElementById(`img-${key}`);
+            const loader = document.getElementById(`load-${key}`);
+
+            // Strategy:
+            // 1. Try Google Imagen AI (if API key active)
+            // 2. Try Local User Photo (images/city.jpg)
+            // 3. Try Local Placeholder (images/city.svg)
+            // 4. Last Resort: Online Placeholder
+
+            const tryLoadImage = (src) => {
+                return new Promise((resolve, reject) => {
+                    const img = new Image();
+                    img.onload = () => resolve(src);
+                    img.onerror = () => reject();
+                    img.src = src;
+                });
+            };
+
+            let finalSrc = null;
+
+            try {
+                // 1. AI Generation (Only if Key is set)
+                if (apiKey && apiKey !== "TU_API_KEY_AQUI") {
+                    try {
+                        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-001:predict?key=${apiKey}`, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ instances: [{ prompt: data.prompt }], parameters: { sampleCount: 1 } })
+                        });
+                        if (response.ok) {
+                            const resData = await response.json();
+                            const base64 = resData.predictions?.[0]?.bytesBase64Encoded;
+                            if (base64) finalSrc = `data:image/png;base64,${base64}`;
+                        }
+                    } catch (e) { console.log("AI Gen skipped"); }
+                }
+
+                // 2. User Custom Photo (Highest Priority for manual files)
+                if (!finalSrc) {
+                    try { await tryLoadImage(`images/${key}.jpg`); finalSrc = `images/${key}.jpg`; } catch (e) { }
+                }
+
+                // 3. SVG Placeholder (Beautiful fallback)
+                if (!finalSrc) {
+                    try { await tryLoadImage(`images/${key}.svg`); finalSrc = `images/${key}.svg`; } catch (e) { }
+                }
+
+                // 4. Last Resort
+                if (!finalSrc) {
+                    finalSrc = "https://placehold.co/600x600/pink/white?text=" + data.name;
+                }
+
+            } catch (e) {
+                finalSrc = "https://placehold.co/600x600/pink/white?text=" + data.name;
+            }
+
+            // Apply Source
+            imgElement.src = finalSrc;
+            imageCache[key] = finalSrc;
+
+            // Show Image
+            imgElement.onload = () => {
+                imgElement.classList.remove('hidden');
+                loader.classList.add('hidden');
+                checkAllLoaded();
+            };
+        }
+
+        function checkAllLoaded() {
+            if (document.querySelectorAll('.img-container img:not(.hidden)').length === 4) {
+                document.getElementById('status-text').innerText = "Todo listo para ti, mi amor 💖";
+            }
+        }
+
+        function openDetails(key) {
+            if (!imageCache[key]) return;
+            const data = destinations[key];
+            document.getElementById('modalTitle').innerText = data.name;
+            document.getElementById('modalImg').style.backgroundImage = `url(${imageCache[key]})`;
+            document.getElementById('modalList').innerHTML = data.activities.map(a => `<li>✨ ${a}</li>`).join('');
+            document.getElementById('modal').style.display = 'flex';
+        }
+
+        function closeModal() { document.getElementById('modal').style.display = 'none'; }
+
+        function confirmDest() {
+            const name = document.getElementById('modalTitle').innerText;
+            document.querySelector('.main-card').innerHTML = `
+                <div class="py-12 animate-bounce">
+                    <span class="text-7xl">✈️</span>
+                    <h2 class="birthday-font text-5xl text-pink-500 mt-6">¡Empaca tus maletas!</h2>
+                    <p class="text-gray-600 mt-4 px-4 text-lg">Nuestra próxima historia comienza en <b>${name}</b>. Te amo infinito.</p>
+                </div>
+            `;
+            closeModal();
+            // Confeti simple (emojis)
+            for (let i = 0; i < 20; i++) createHeart();
+        }
+
+        // Decoración: Corazones volando
+        function createHeart() {
+            const container = document.getElementById('heart-container');
+            const heart = document.createElement('div');
+            heart.className = 'heart-bg';
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+            heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
+            container.appendChild(heart);
+            setTimeout(() => heart.remove(), 10000);
+        }
+
+        window.onload = () => {
+            Object.keys(destinations).forEach(key => loadImage(key));
+            setInterval(createHeart, 1000);
+        };
+    </script>
+</body>
+
+</html>
