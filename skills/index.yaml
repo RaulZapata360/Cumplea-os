@@ -12,6 +12,14 @@
 
 skills:
 
+  - id: metric-explainer
+    name: "Metric Explainer"
+    description: "Explica cualquier métrica financiera o SaaS en lenguaje simple con benchmarks por etapa, red flags, levers de mejora y veredicto (healthy/watch/concerning/critical) si el usuario provee su número."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [métricas, finanzas, saas, kpi, benchmarks, cfo, análisis]
+    instructions: skills/metric-explainer/instructions.md
+
   - id: sop-standardizer
     name: "SOP Standardizer"
     description: "Convierte notas sueltas, brain dumps o pasos en borrador en un SOP formal y ejecutable listo para wiki de empresa. Incluye quick reference de una página."
