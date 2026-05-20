@@ -12,6 +12,14 @@
 
 skills:
 
+  - id: linkedin-post-generator
+    name: "LinkedIn Post Generator"
+    description: "Redacta posts de LinkedIn de alto engagement usando patrones probados: hooks de historia personal, formato demo, pain points relacionables. Incluye checklist pre-publicación y anti-patrones a evitar."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [linkedin, social-media, copywriting, contenido, engagement, posts]
+    instructions: skills/linkedin-post-generator/instructions.md
+
   - id: ab-copy-variants-generator
     name: "A/B Copy Variants Generator"
     description: "Genera 5 variantes de copy testables para cualquier elemento de marketing (subject lines, headlines, CTAs, ads). Cada variante prueba un lever distinto con hipótesis falsificable. Incluye sample size y apuesta ganadora."
