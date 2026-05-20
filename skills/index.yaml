@@ -12,6 +12,14 @@
 
 skills:
 
+  - id: sop-standardizer
+    name: "SOP Standardizer"
+    description: "Convierte notas sueltas, brain dumps o pasos en borrador en un SOP formal y ejecutable listo para wiki de empresa. Incluye quick reference de una página."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [sop, documentación, operaciones, procesos, wiki, onboarding]
+    instructions: skills/sop-standardizer/instructions.md
+
   - id: example-deploy-vercel
     name: "Deploy a Vercel"
     description: "Despliega un proyecto estático o Next.js a Vercel usando CLI o MCP. Incluye configuración de vercel.json, manejo de env vars y verificación del deploy."
