@@ -2,12 +2,17 @@
 # Lee solo este archivo primero.
 # Si un skill parece relevante → carga instructions.md
 # Si necesitas más detalle → carga la carpeta files/
+#
+# Patrones disponibles (ver skills/patterns.yaml):
+#   sequential-workflow | multi-mcp-coordination | iterative-refinement
+#   context-aware-branching | domain-intelligence
 
 skills:
 
   - id: example-deploy-vercel
     name: "Deploy a Vercel"
     description: "Despliega un proyecto estático o Next.js a Vercel usando CLI o MCP. Incluye configuración de vercel.json, manejo de env vars y verificación del deploy."
+    pattern: sequential-workflow
     tags: [deploy, vercel, frontend, static]
     instructions: skills/example-deploy-vercel/instructions.md
     files: skills/example-deploy-vercel/files/
@@ -15,7 +20,8 @@ skills:
 # ──────────────────────────────────────────────
 # CÓMO AGREGAR UN SKILL NUEVO
 # ──────────────────────────────────────────────
-# 1. Agrega una entrada aquí (id, name, description, tags, instructions, files)
-# 2. Crea la carpeta: skills/<id>/
-# 3. Escribe el workflow en: skills/<id>/instructions.md
-# 4. Pon scripts/templates en: skills/<id>/files/
+# 1. Agrega una entrada aquí (id, name, description, pattern, tags, instructions, files)
+# 2. Elige el patrón que mejor describe el comportamiento (ver skills/patterns.yaml)
+# 3. Crea la carpeta: skills/<id>/
+# 4. Escribe el workflow en: skills/<id>/instructions.md
+# 5. Pon scripts/templates en: skills/<id>/files/
