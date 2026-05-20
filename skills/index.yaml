@@ -12,6 +12,14 @@
 
 skills:
 
+  - id: writing-partner
+    name: "Writing Partner"
+    description: "Co-redacta artículos, blogs y newsletters en ciclos iterativos: outline → research → draft por sección → feedback → mejorar → repetir. Preserva la voz del escritor, agrega citas y entrega revisión final con checklist pre-publicación."
+    pattern: iterative-refinement
+    category: document-creation
+    tags: [escritura, blog, artículos, research, citas, feedback, newsletter, contenido]
+    instructions: skills/writing-partner/instructions.md
+
   - id: meeting-notes-extractor
     name: "Meeting Notes Extractor"
     description: "Procesa transcripts de Zoom/Teams/Meet y genera actas profesionales en Word con tabla de action items (owner + deadline + status), decisiones clave y resumen de discusión usando Python/python-docx."
