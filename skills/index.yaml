@@ -12,6 +12,15 @@
 
 skills:
 
+  - id: partnership-proposal-writer
+    name: "Partnership Proposal Writer"
+    description: "Redacta respuestas y cold outreach de partnerships para Krystian Wojtarowicz / DFA Course Academy. Conoce los números exactos de reach, perfil de audiencia, menú de colaboraciones y deal structure preferido."
+    pattern: domain-intelligence
+    category: document-creation
+    tags: [partnership, sponsorship, outreach, email, brand, creator, saas]
+    instructions: skills/partnership-proposal-writer/instructions.md
+    files: skills/partnership-proposal-writer/files/
+
   - id: youtube-thumbnail-designer
     name: "YouTube Thumbnail Designer"
     description: "Diseña thumbnails de YouTube de alta conversión como PNG. Cubre contexto, estrategia de layout, reglas de diseño por nicho y renderizado con Python/Pillow. Siempre itera con feedback del usuario."
