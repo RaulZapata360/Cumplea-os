@@ -12,6 +12,70 @@
 
 skills:
 
+  - id: ab-copy-variants-generator
+    name: "A/B Copy Variants Generator"
+    description: "Genera 5 variantes de copy testables para cualquier elemento de marketing (subject lines, headlines, CTAs, ads). Cada variante prueba un lever distinto con hipótesis falsificable. Incluye sample size y apuesta ganadora."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [marketing, copywriting, ab-testing, conversion, email, ads, cta]
+    instructions: skills/ab-copy-variants-generator/instructions.md
+
+  - id: hook-engineer
+    name: "Hook Engineer"
+    description: "Genera 10 hooks scroll-stopping para LinkedIn, email, blog o ads. Cada hook usa un mecanismo psicológico distinto. Puntúa todos y marca los top 3 con justificación."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [marketing, copywriting, hooks, linkedin, email, contenido, atención]
+    instructions: skills/hook-engineer/instructions.md
+
+  - id: seo-intent-analyzer
+    name: "SEO Intent Analyzer"
+    description: "Analiza el search intent de cualquier keyword y produce un content brief completo: tipo de contenido, formato, ángulo, outline H1/H2/H3 y keywords semánticas alineadas con lo que Google premia."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [seo, keywords, content-brief, search-intent, serp, outline]
+    instructions: skills/seo-intent-analyzer/instructions.md
+
+  - id: content-optimizer
+    name: "Content Optimizer"
+    description: "Audita y optimiza cualquier contenido para SEO on-page. Verifica keyword density, meta tags, estructura de headings y legibilidad. Entrega: audit con severidad + correcciones + checklist completa."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [seo, on-page, meta-tags, headings, readability, keyword, audit]
+    instructions: skills/content-optimizer/instructions.md
+
+  - id: csv-to-presentations
+    name: "CSV to Presentations"
+    description: "Convierte datos tabulares (CSV/Excel) en presentaciones PowerPoint profesionales con tablas y gráficas usando Python/python-pptx. Ideal para reportes trimestrales y executive summaries."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [python, pptx, powerpoint, datos, reportes, gráficas, csv, excel]
+    instructions: skills/csv-to-presentations/instructions.md
+
+  - id: career-ladder-builder
+    name: "Career Ladder Builder"
+    description: "Construye un framework de 4 niveles de progresión profesional para cualquier rol con descripciones de comportamiento por nivel. Incluye 'What this level is NOT' para evitar grade inflation y matriz resumen."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [hr, career-ladder, performance, roles, promoción, comportamiento, equidad]
+    instructions: skills/career-ladder-builder/instructions.md
+
+  - id: campaign-retrospective-builder
+    name: "Campaign Retrospective Builder"
+    description: "Facilita retrospectivas de campañas de marketing con análisis de causa raíz (5 Whys) por canal/creatividad/audiencia. Entrega: qué matar, qué mantener, qué escalar y 3 hipótesis para la siguiente iteración."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [marketing, retrospectiva, campañas, análisis, 5-whys, hipótesis, roi]
+    instructions: skills/campaign-retrospective-builder/instructions.md
+
+  - id: decision-logger
+    name: "Decision Logger"
+    description: "Documenta cualquier decisión importante como un Decision Record formal para wiki de equipo. Captura contexto, opciones rechazadas, trade-offs y condiciones de revisión para preservar el razonamiento."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [documentación, decisiones, wiki, equipo, arquitectura, operaciones]
+    instructions: skills/decision-logger/instructions.md
+
   - id: partnership-proposal-writer
     name: "Partnership Proposal Writer"
     description: "Redacta respuestas y cold outreach de partnerships para Krystian Wojtarowicz / DFA Course Academy. Conoce los números exactos de reach, perfil de audiencia, menú de colaboraciones y deal structure preferido."
