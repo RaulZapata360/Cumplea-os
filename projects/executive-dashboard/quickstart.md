@@ -32,6 +32,15 @@
 - [ ] Existe un acceso de solo lectura para el cliente
 - [ ] Hay un owner definido para mantener los datos actualizados
 
+## Repositorios de referencia
+
+| Repositorio | Para qué |
+|-------------|----------|
+| [midday-ai/midday](https://github.com/midday-ai/midday) | Modelo de datos financiero en Next.js + Supabase: facturación, conciliación, dashboards |
+| [ghostfolio/ghostfolio](https://github.com/ghostfolio/ghostfolio) | Cálculo de ROI, historial de transacciones, gráficos financieros interactivos |
+| [PostHog/posthog](https://github.com/PostHog/posthog) | Funnels de conversión, A/B testing en código, event tracking y retención |
+
 ## Skills relevantes
 
-*(Agregar skills de visualización cuando se creen)*
+- `metric-explainer` — explicar cualquier KPI financiero o SaaS con benchmarks y veredicto
+- `csv-to-presentations` — convertir datos tabulares en presentaciones ejecutivas

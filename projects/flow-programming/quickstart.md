@@ -32,6 +32,9 @@
 
 | Repositorio | Para qué |
 |-------------|----------|
+| [apache/airflow](https://github.com/apache/airflow) | DAGs, dependencias entre tareas, reintentos automáticos, ejecuciones programadas |
+| [n8n-io/n8n](https://github.com/n8n-io/n8n) | Automatización visual por nodos, iterar sobre arrays, conectar APIs y scripts |
+| [prefecthq/prefect](https://github.com/prefecthq/prefect) | Convertir funciones Python en pipelines resilientes y observables |
 | [microsoft/mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) | Fundamentos MCP: arquitectura cliente-servidor, herramientas, recursos |
 | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Implementaciones de referencia: Google Drive, PostgreSQL, GitHub, filesystem |
 

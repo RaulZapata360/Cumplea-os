@@ -37,6 +37,9 @@
 
 | Repositorio | Para qué |
 |-------------|----------|
+| [shadcn-ui/ui](https://github.com/shadcn-ui/ui) | Componentes Tailwind copiables: sistema de diseño profesional sin dependencia de paquete |
+| [radix-ui/primitives](https://github.com/radix-ui/primitives) | Fundamentos de accesibilidad: foco, ARIA, estado interno de dropdowns y modales |
+| [vercel/satori](https://github.com/vercel/satori) | Generar imágenes Open Graph dinámicas desde HTML/CSS |
 | [mrdoob/three.js](https://github.com/mrdoob/three.js) | Renderizado 3D en navegador: modelos, texturas, animaciones |
 | [vercel/next.js examples](https://github.com/vercel/next.js/tree/canary/examples) | Auth, DB, pagos, cientos de integraciones listas |
 | [twentyhq/twenty](https://github.com/twentyhq/twenty) | Arquitectura CRM escalable con TypeScript/React |

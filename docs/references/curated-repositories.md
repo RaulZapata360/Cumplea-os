@@ -2,7 +2,7 @@
 
 **Fuente:** Selección curada de repositorios open-source para arquitecturas modernas,
 datos espaciales y flujos de trabajo avanzados.
-**Última revisión:** 2025-05-20
+**Última revisión:** 2026-05-20
 
 ---
 
@@ -107,6 +107,88 @@ de archivos locales. Cada servidor es un caso de estudio de `multi-mcp-coordinat
 
 ---
 
+## 6. Cálculos en Flujos e Iteraciones (Workflows & DAGs)
+
+| Repositorio | Stack | Qué enseña |
+|-------------|-------|-----------|
+| [apache/airflow](https://github.com/apache/airflow) | Python | Estándar de la industria para orquestar flujos: dependencias entre tareas, reintentos automáticos, ejecuciones programadas |
+| [n8n-io/n8n](https://github.com/n8n-io/n8n) | TypeScript / Node.js | Automatización visual basada en nodos: cómo iterar sobre arrays y pasar datos entre bloques lógicos y APIs |
+| [prefecthq/prefect](https://github.com/prefecthq/prefect) | Python | Alternativa moderna a Airflow: convierte funciones de cálculo en pipelines resilientes y observables |
+
+### Notas de uso
+
+**Airflow** — Estándar para cálculos complejos multi-paso (topografía → volúmenes → reporte).
+Estudiar para: estructurar DAGs, manejar dependencias entre tareas, reintentos y programación recurrente.
+
+**n8n** — Visual y accesible. Excelente para entender cómo fluyen datos entre bloques.
+Estudiar para: automatización sin-código que luego se convierte en skill `workflow-automation`.
+
+**Prefect** — Más pythónico y moderno que Airflow.
+Estudiar para: convertir scripts de cálculo existentes en pipelines con observabilidad y resiliencia.
+
+---
+
+## 7. Finanzas y Gestión de Negocios
+
+| Repositorio | Stack | Qué enseña |
+|-------------|-------|-----------|
+| [midday-ai/midday](https://github.com/midday-ai/midday) | Next.js / Supabase | Sistema operativo financiero open-source: facturación, conciliación bancaria, dashboards financieros |
+| [ghostfolio/ghostfolio](https://github.com/ghostfolio/ghostfolio) | Angular / Node.js | Gestión de patrimonio: cálculo de ROI, historial de transacciones, gráficos financieros interactivos |
+
+### Notas de uso
+
+**midday** — El repositorio definitivo para estructurar datos financieros en stack moderno.
+Estudiar para: modelo de datos de facturación, conciliación bancaria, dashboards financieros.
+Complementa: `executive-dashboard` quickstart.
+
+**ghostfolio** — Especializado en portafolios de inversión.
+Estudiar para: cómo se calculan retornos (ROI), historial de transacciones, visualización de patrimonio.
+Útil para: clientes que necesitan reportes de rentabilidad o seguimiento de inversiones.
+
+---
+
+## 8. Marketing y Analítica de Crecimiento
+
+| Repositorio | Stack | Qué enseña |
+|-------------|-------|-----------|
+| [dubinc/dub](https://github.com/dubinc/dub) | Next.js | Infraestructura de enlaces de marketing: rastreo de clics, geolocalización, metadatos SEO, atribución de campañas |
+| [PostHog/posthog](https://github.com/PostHog/posthog) | Python / TypeScript | Plataforma de analítica de producto: embudos de conversión, pruebas A/B en código, comportamiento real del usuario |
+
+### Notas de uso
+
+**dub** — Clase magistral de marketing en código.
+Estudiar para: rastrear clics, mapear geolocalización, estructurar metadatos para SEO, atribución multi-canal.
+Complementa: `seo-intent-analyzer`, `campaign-retrospective-builder`.
+
+**PostHog** — Analítica de producto a escala masiva, todo open-source.
+Estudiar para: arquitectura de funnels, implementación de A/B testing, event tracking y retención.
+Complementa: `ab-copy-variants-generator`, `cta-optimizer`.
+
+---
+
+## 9. UI / UX (Experiencia e Interfaz de Usuario)
+
+| Repositorio | Stack | Qué enseña |
+|-------------|-------|-----------|
+| [shadcn-ui/ui](https://github.com/shadcn-ui/ui) | React / Tailwind CSS | No es una librería instalable — es código fuente copiable. Enseña componentes con Tailwind, diseño minimalista e interfaces profesionales |
+| [radix-ui/primitives](https://github.com/radix-ui/primitives) | React | Fundamentos invisibles del UX: foco de teclado, accesibilidad para lectores de pantalla, estado interno de componentes complejos |
+| [vercel/satori](https://github.com/vercel/satori) | TypeScript | Convierte HTML/CSS en imágenes SVG: generación dinámica de Open Graph images para redes sociales y previsualizaciones de enlaces |
+
+### Notas de uso
+
+**shadcn/ui** — La forma correcta de aprender UI moderna: el código vive en tu proyecto.
+Estudiar para: estructura de componentes Tailwind, variantes, temas, sistema de diseño sin dependencia de terceros.
+Complementa: `web-design` quickstart, cualquier skill que genere interfaces.
+
+**radix-ui** — Base de shadcn y de gran parte de la web moderna.
+Estudiar para: accesibilidad real (a11y), foco de teclado, estados ARIA, componentes complejos (dialogs, dropdowns, menus).
+
+**satori (Vercel)** — Generación de imágenes desde markup.
+Estudiar para: Open Graph dinámico, thumbnails para PDFs compartidos en redes, previsualizaciones de contenido.
+Complementa: `youtube-thumbnail-designer`, `linkedin-post-generator`.
+
+---
+
 ## Skills futuros identificados
 
 A partir de estos repositorios, los siguientes skills tienen alta prioridad:
@@ -118,6 +200,10 @@ A partir de estos repositorios, los siguientes skills tienen alta prioridad:
 | `mcp-server-builder` | sequential-workflow | mcp-enhancement | mcp-for-beginners |
 | `react-pdf-generator` | sequential-workflow | document-creation | react-pdf |
 | `pdf-form-filler` | sequential-workflow | workflow-automation | pdf-lib |
+| `dag-workflow-builder` | sequential-workflow | workflow-automation | Airflow / Prefect |
+| `financial-dashboard` | context-aware-branching | document-creation | midday / ghostfolio |
+| `campaign-analytics` | sequential-workflow | workflow-automation | PostHog / dub |
+| `og-image-generator` | sequential-workflow | document-creation | satori |
 
 ---
 

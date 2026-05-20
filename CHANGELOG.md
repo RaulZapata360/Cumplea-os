@@ -7,6 +7,30 @@ Todas las versiones siguen [Semantic Versioning](https://semver.org/):
 
 ---
 
+## [1.3.0] — 2026-05-20
+
+### Agregado
+- `docs/references/curated-repositories.md` — 4 nuevos dominios (secciones 6-9):
+  - Workflows & DAGs: apache/airflow, n8n-io/n8n, prefecthq/prefect
+  - Finanzas: midday-ai/midday, ghostfolio/ghostfolio
+  - Marketing y analítica: dubinc/dub, PostHog/posthog
+  - UI/UX: shadcn-ui/ui, radix-ui/primitives, vercel/satori
+- 4 nuevos skills futuros identificados: `dag-workflow-builder`, `financial-dashboard`,
+  `campaign-analytics`, `og-image-generator`
+
+### Mejorado
+- `projects/flow-programming/quickstart.md` — repos de Airflow, n8n, Prefect
+- `projects/executive-dashboard/quickstart.md` — repos de midday, ghostfolio, PostHog
+  + skills relevantes completados (`metric-explainer`, `csv-to-presentations`)
+- `projects/web-design/quickstart.md` — repos de shadcn, radix-ui, satori
+
+### Contexto
+Segunda ronda de repositorios curados, cerrando los dominios de automatización,
+finanzas, analítica de crecimiento y UI/UX. Los 4 quickstarts ahora tienen
+referencias de código para cada área de trabajo.
+
+---
+
 ## [1.2.0] — 2026-05-20
 
 ### Agregado
