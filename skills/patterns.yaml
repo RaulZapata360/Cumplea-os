@@ -1,0 +1,67 @@
+# DESIGN PATTERNS — Referencia de los 5 patrones
+# Cada skill en index.yaml declara su patrón con el campo `pattern`.
+# El patrón describe la estructura de comportamiento del skill,
+# no su dominio. Ayuda a Claude a anticipar el flujo antes de cargar instructions.md.
+
+patterns:
+
+  - id: sequential-workflow
+    name: "Sequential Workflow"
+    summary: "Pasos en orden fijo. Cada paso depende del anterior."
+    when_to_use: "La tarea tiene una secuencia clara de etapas donde el output de una es el input de la siguiente. No hay bifurcaciones."
+    example: "Account → Payment → Subscription → Welcome Email"
+    structure: |
+      Paso 1 → (output) → Paso 2 → (output) → Paso 3 → ... → Resultado final
+    signals_in_instructions:
+      - Pasos numerados sin condiciones
+      - Cada paso dice "usa el resultado del paso anterior"
+      - Un solo camino de inicio a fin
+
+  - id: multi-mcp-coordination
+    name: "Multi-MCP Coordination"
+    summary: "Orquesta múltiples servicios o herramientas en fases."
+    when_to_use: "La tarea requiere llamar a 2+ herramientas/MCPs distintos, posiblemente en paralelo o en fases."
+    example: "GitHub → Drive → Linear → Slack"
+    structure: |
+      Fase 1: [MCP-A, MCP-B en paralelo] → agregar resultados
+      Fase 2: [MCP-C con los resultados] → Fase 3: [MCP-D notificación]
+    signals_in_instructions:
+      - Menciona 2+ herramientas distintas
+      - Tiene fases explícitas
+      - Coordina resultados entre servicios
+
+  - id: iterative-refinement
+    name: "Iterative Refinement"
+    summary: "Generar → Revisar → Mejorar → Repetir hasta criterio de calidad."
+    when_to_use: "El output correcto no se conoce de antemano. Se necesitan ciclos de feedback para convergir en calidad."
+    example: "Imágenes de marketing, redacción, code review"
+    structure: |
+      Generar draft → Revisar contra criterio → ¿Cumple? → Sí: entregar / No: mejorar → volver a revisar
+    signals_in_instructions:
+      - Tiene un ciclo o loop explícito
+      - Define criterios de aceptación
+      - Menciona revisión o aprobación
+
+  - id: context-aware-branching
+    name: "Context-Aware Branching"
+    summary: "Mismo input, distintos caminos según el tipo o contexto detectado."
+    when_to_use: "La tarea tiene variantes según el tipo de input (código vs doc, nuevo vs existente, prod vs dev)."
+    example: "Code → GitHub MCP / Doc → Notion MCP"
+    structure: |
+      Detectar tipo de input → Si A: flujo-A / Si B: flujo-B / Si C: flujo-C
+    signals_in_instructions:
+      - Tiene condiciones if/else explícitas
+      - Detecta el tipo antes de actuar
+      - Los pasos difieren según el contexto
+
+  - id: domain-intelligence
+    name: "Domain Intelligence"
+    summary: "Conocimiento de dominio o empresa embebido directamente en el skill."
+    when_to_use: "El skill encapsula reglas de negocio, SOPs o convenciones específicas del proyecto que Claude no puede inferir."
+    example: "SOPs de deploy, reglas de microservicios, guías de estilo internas"
+    structure: |
+      Contexto de dominio (embebido) + tarea → acción informada por las reglas del dominio
+    signals_in_instructions:
+      - Tiene sección de "Contexto" o "Reglas del proyecto"
+      - Menciona nombres de sistemas/equipos internos
+      - Sin este skill, Claude cometería errores por falta de contexto

@@ -1,0 +1,40 @@
+# SKILL CATEGORIES — Las 3 categorías de clasificación
+# Úsalas junto al campo `pattern` en index.yaml.
+# pattern → CÓMO se comporta el skill
+# category → QUÉ produce o logra el skill
+
+categories:
+
+  - id: document-creation
+    name: "Document & Asset Creation"
+    focus: Output-focused
+    summary: "El skill produce un entregable concreto: documento, imagen, reporte, presentación."
+    includes:
+      - PDFs y presentaciones
+      - Reportes y hojas de cálculo
+      - Imágenes y assets de diseño
+      - Documentos profesionales (SOWs, propuestas, contratos)
+    signal: "El resultado final es un archivo o documento que se entrega al usuario o cliente."
+
+  - id: workflow-automation
+    name: "Workflow Automation"
+    focus: Process-focused
+    summary: "El skill automatiza o estandariza un proceso repetible, posiblemente multi-plataforma."
+    includes:
+      - Secuencias de tareas multi-paso
+      - Procesos que se repiten frecuentemente
+      - Orquestación cross-platform
+      - Flujos de trabajo estándar de equipo
+    signal: "El valor está en el proceso consistente, no solo en el output final."
+
+  - id: mcp-enhancement
+    name: "MCP Enhancement"
+    focus: Intelligence-focused
+    summary: "El skill enseña a Claude a usar bien un MCP específico: mejores prácticas, manejo de errores, combinaciones óptimas de tools."
+    includes:
+      - Guía de uso de un MCP
+      - Mejores prácticas por API
+      - Estrategias de manejo de errores
+      - Combinaciones óptimas de herramientas
+    signal: "Sin este skill, Claude usaría el MCP de forma genérica y cometería errores evitables."
+    note: "Categoría más subutilizada — alto impacto por esfuerzo."

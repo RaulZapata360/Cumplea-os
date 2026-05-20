@@ -1,0 +1,36 @@
+# PROJECTS INDEX — Quick starts por tipo de proyecto
+# Al iniciar un proyecto nuevo, carga el quickstart correspondiente.
+# Cada quickstart define: stack, herramientas, skills relevantes y primer paso.
+
+projects:
+
+  - id: web-design
+    name: "Diseño Web"
+    description: "Sitios y apps web: landing pages, portafolios, apps con frameworks modernos."
+    tags: [html, css, javascript, react, nextjs, vercel, tailwind]
+    quickstart: projects/web-design/quickstart.md
+
+  - id: structural-calc
+    name: "Cálculo Estructural"
+    description: "Análisis y dimensionamiento de estructuras: vigas, losas, marcos, cimentaciones."
+    tags: [estructuras, cálculo, python, excel, normas, reportes]
+    quickstart: projects/structural-calc/quickstart.md
+
+  - id: flow-programming
+    name: "Programación de Flujos"
+    description: "Automatización de procesos: n8n, Make, Zapier, scripts de orquestación."
+    tags: [n8n, make, zapier, automatización, api, webhooks]
+    quickstart: projects/flow-programming/quickstart.md
+
+  - id: executive-dashboard
+    name: "Dashboard Ejecutivo"
+    description: "Visualización de datos y KPIs para toma de decisiones: reportes, gráficas, tablas dinámicas."
+    tags: [dashboard, kpi, powerbi, looker, python, visualización, datos]
+    quickstart: projects/executive-dashboard/quickstart.md
+
+# ──────────────────────────────────────────────
+# CÓMO AGREGAR UN TIPO DE PROYECTO NUEVO
+# ──────────────────────────────────────────────
+# 1. Agrega una entrada aquí (id, name, description, tags, quickstart)
+# 2. Crea la carpeta: projects/<id>/
+# 3. Escribe el quickstart en: projects/<id>/quickstart.md
