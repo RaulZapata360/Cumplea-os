@@ -12,6 +12,14 @@
 
 skills:
 
+  - id: meeting-notes-extractor
+    name: "Meeting Notes Extractor"
+    description: "Procesa transcripts de Zoom/Teams/Meet y genera actas profesionales en Word con tabla de action items (owner + deadline + status), decisiones clave y resumen de discusión usando Python/python-docx."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [meeting, actas, action-items, zoom, teams, word, python, transcript]
+    instructions: skills/meeting-notes-extractor/instructions.md
+
   - id: cta-optimizer
     name: "CTA Optimizer"
     description: "Reescribe cualquier CTA débil para reducir fricción y aumentar conversión. Diagnostica la debilidad actual, identifica la etapa de relación y genera 5 variantes en espectro de fricción con recomendación razonada."
