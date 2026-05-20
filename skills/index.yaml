@@ -12,6 +12,14 @@
 
 skills:
 
+  - id: cta-optimizer
+    name: "CTA Optimizer"
+    description: "Reescribe cualquier CTA débil para reducir fricción y aumentar conversión. Diagnostica la debilidad actual, identifica la etapa de relación y genera 5 variantes en espectro de fricción con recomendación razonada."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [cta, sales, copywriting, conversión, email, landing-page, fricción]
+    instructions: skills/cta-optimizer/instructions.md
+
   - id: linkedin-post-generator
     name: "LinkedIn Post Generator"
     description: "Redacta posts de LinkedIn de alto engagement usando patrones probados: hooks de historia personal, formato demo, pain points relacionables. Incluye checklist pre-publicación y anti-patrones a evitar."
