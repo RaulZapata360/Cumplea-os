@@ -6,6 +6,9 @@
 # Patrones disponibles (ver skills/patterns.yaml):
 #   sequential-workflow | multi-mcp-coordination | iterative-refinement
 #   context-aware-branching | domain-intelligence
+#
+# Categorías disponibles (ver skills/categories.yaml):
+#   document-creation | workflow-automation | mcp-enhancement
 
 skills:
 
@@ -13,6 +16,7 @@ skills:
     name: "Deploy a Vercel"
     description: "Despliega un proyecto estático o Next.js a Vercel usando CLI o MCP. Incluye configuración de vercel.json, manejo de env vars y verificación del deploy."
     pattern: sequential-workflow
+    category: workflow-automation
     tags: [deploy, vercel, frontend, static]
     instructions: skills/example-deploy-vercel/instructions.md
     files: skills/example-deploy-vercel/files/
