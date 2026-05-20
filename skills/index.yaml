@@ -12,6 +12,14 @@
 
 skills:
 
+  - id: youtube-thumbnail-designer
+    name: "YouTube Thumbnail Designer"
+    description: "Diseña thumbnails de YouTube de alta conversión como PNG. Cubre contexto, estrategia de layout, reglas de diseño por nicho y renderizado con Python/Pillow. Siempre itera con feedback del usuario."
+    pattern: iterative-refinement
+    category: document-creation
+    tags: [youtube, thumbnail, diseño, visual, png, pillow, python, imagen]
+    instructions: skills/youtube-thumbnail-designer/instructions.md
+
   - id: job-description-optimizer
     name: "Job Description Optimizer"
     description: "Audita y reescribe descripciones de empleo para atraer A-players. Detecta requirement inflation, salary opacity y buzzwords, luego reescribe con lenguaje de outcomes. Entrega: audit + JD reescrito + changelog."
