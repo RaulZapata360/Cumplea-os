@@ -1,17 +1,29 @@
-# 🎉 Feliz Cumpleaños Mi Amor
+# Skills System — Progressive Disclosure
 
-Este repositorio contiene la experiencia interactiva que diseñé especialmente para ti en tu cumpleaños.
+Repositorio de skills reutilizables para proyectos de IA.
 
-[![Vercel Deployment](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/RaulZapata360/Cumplea-os)
+El sistema usa **Progressive Disclosure en 3 niveles** para que Claude cargue solo lo que necesita y mantenga el contexto liviano:
 
-## ¿De qué se trata?
-Es una tarjeta digital interactiva donde puedes elegir nuestra próxima gran aventura. He incluido nuestros lugares soñados:
-- **Santiago** 🎢
-- **Pucón** 🌋
-- **San Pedro de Atacama** 🌵
-- **Frutillar** 🥧
+| Nivel | Archivo | Cuándo se carga |
+|-------|---------|-----------------|
+| 1 | `skills/index.yaml` | Siempre (pocos tokens) |
+| 2 | `skills/<id>/instructions.md` | Al hacer match con la tarea |
+| 3 | `skills/<id>/files/` | Bajo demanda |
 
-## Instrucciones para ver el regalo
-Si quieres ver el regalo directamente, haz clic en el botón de arriba "Deploy to Vercel" o simplemente instala este repositorio en tu cuenta de Vercel.
+## Estructura
 
-¡Espero que te guste tanto como a mí hacerlo para ti! ❤️
+```
+skills/
+  index.yaml                    <- Nivel 1: catálogo completo
+  HOW_TO_USE.md                 <- Guía para agregar skills
+  <skill-id>/
+    instructions.md             <- Nivel 2: workflow completo
+    files/                      <- Nivel 3: scripts, templates
+
+_archive/
+  birthday-site/                <- Proyecto anterior (inactivo)
+```
+
+## Empezar
+
+Lee `skills/HOW_TO_USE.md` para agregar un skill nuevo.

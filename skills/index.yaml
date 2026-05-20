@@ -1,0 +1,21 @@
+# SKILLS INDEX — Nivel 1 (siempre en contexto)
+# Lee solo este archivo primero.
+# Si un skill parece relevante → carga instructions.md
+# Si necesitas más detalle → carga la carpeta files/
+
+skills:
+
+  - id: example-deploy-vercel
+    name: "Deploy a Vercel"
+    description: "Despliega un proyecto estático o Next.js a Vercel usando CLI o MCP. Incluye configuración de vercel.json, manejo de env vars y verificación del deploy."
+    tags: [deploy, vercel, frontend, static]
+    instructions: skills/example-deploy-vercel/instructions.md
+    files: skills/example-deploy-vercel/files/
+
+# ──────────────────────────────────────────────
+# CÓMO AGREGAR UN SKILL NUEVO
+# ──────────────────────────────────────────────
+# 1. Agrega una entrada aquí (id, name, description, tags, instructions, files)
+# 2. Crea la carpeta: skills/<id>/
+# 3. Escribe el workflow en: skills/<id>/instructions.md
+# 4. Pon scripts/templates en: skills/<id>/files/
