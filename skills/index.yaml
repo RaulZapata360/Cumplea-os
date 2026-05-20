@@ -12,6 +12,22 @@
 
 skills:
 
+  - id: pdf-generator
+    name: "PDF Generator"
+    description: "Genera documentos PDF profesionales (reportes, propuestas, memorias) desde texto, datos o markdown usando Python. Soporta reportlab para tablas/datos y weasyprint para layouts HTML/CSS. Incluye portada, secciones, tablas estilizadas y pie de página."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [pdf, python, reportlab, weasyprint, reportes, propuestas, documentos]
+    instructions: skills/pdf-generator/instructions.md
+
+  - id: pdf-reader
+    name: "PDF Reader"
+    description: "Extrae texto y tablas de cualquier PDF y los guarda como archivo .md estructurado. Soporta PDFs digitales (pdfplumber, pymupdf) y escaneados (OCR con pytesseract). El .md resultante es procesable por Claude u otros flujos."
+    pattern: sequential-workflow
+    category: workflow-automation
+    tags: [pdf, extracción, markdown, ocr, pdfplumber, pymupdf, tablas, lectura]
+    instructions: skills/pdf-reader/instructions.md
+
   - id: writing-partner
     name: "Writing Partner"
     description: "Co-redacta artículos, blogs y newsletters en ciclos iterativos: outline → research → draft por sección → feedback → mejorar → repetir. Preserva la voz del escritor, agrega citas y entrega revisión final con checklist pre-publicación."
