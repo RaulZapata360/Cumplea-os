@@ -28,6 +28,13 @@
 - [ ] El flujo fue ejecutado al menos 3 veces en test sin errores
 - [ ] Existe un skill en el índice si el flujo es reutilizable
 
+## Repositorios de referencia
+
+| Repositorio | Para qué |
+|-------------|----------|
+| [microsoft/mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) | Fundamentos MCP: arquitectura cliente-servidor, herramientas, recursos |
+| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Implementaciones de referencia: Google Drive, PostgreSQL, GitHub, filesystem |
+
 ## Skills relevantes
 
 *(Agregar skills de automatización cuando se creen)*

@@ -33,6 +33,16 @@
 - [ ] Dominio configurado si aplica
 - [ ] README con instrucciones mínimas
 
+## Repositorios de referencia
+
+| Repositorio | Para qué |
+|-------------|----------|
+| [mrdoob/three.js](https://github.com/mrdoob/three.js) | Renderizado 3D en navegador: modelos, texturas, animaciones |
+| [vercel/next.js examples](https://github.com/vercel/next.js/tree/canary/examples) | Auth, DB, pagos, cientos de integraciones listas |
+| [twentyhq/twenty](https://github.com/twentyhq/twenty) | Arquitectura CRM escalable con TypeScript/React |
+| [pdovhomilja/nextcrm-app](https://github.com/pdovhomilja/nextcrm-app) | CRM completo: Next.js + Prisma + PostgreSQL + shadcn/ui |
+| [diegomura/react-pdf](https://github.com/diegomura/react-pdf) | PDFs desde componentes React para reportes y entregas |
+
 ## Skills relevantes
 
 - `example-deploy-vercel` — deploy a Vercel paso a paso

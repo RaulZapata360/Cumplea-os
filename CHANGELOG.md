@@ -7,6 +7,30 @@ Todas las versiones siguen [Semantic Versioning](https://semver.org/):
 
 ---
 
+## [1.2.0] — 2026-05-20
+
+### Agregado
+- `docs/references/curated-repositories.md` — selección curada de 14 repositorios open-source
+  en 5 dominios: Ingeniería/Topografía, Web/CRM, Visualización 3D, PDF, MCP
+- `docs/references/README.md` actualizado con la nueva entrada en la tabla de fuentes
+- Skills futuros identificados: `bim-ifc-extractor`, `point-cloud-processor`,
+  `mcp-server-builder`, `react-pdf-generator`, `pdf-form-filler`
+
+### Mejorado
+- `projects/structural-calc/quickstart.md` — sección de repositorios de referencia
+  (PDAL, IfcOpenShell, geopandas) + skills relevantes
+- `projects/web-design/quickstart.md` — sección de repositorios de referencia
+  (three.js, Next.js examples, twenty, nextcrm-app, react-pdf)
+- `projects/flow-programming/quickstart.md` — sección de repositorios de referencia
+  (mcp-for-beginners, modelcontextprotocol/servers)
+
+### Contexto
+Los repositorios curados conectan cada dominio de proyecto con fuentes de aprendizaje
+concretas. Los quickstarts ahora tienen referencias directas a código open-source para
+arquitecturas de ingeniería, web, visualización 3D, documentos y flujos MCP.
+
+---
+
 ## [1.1.0] — 2025-05-20
 
 ### Mejorado

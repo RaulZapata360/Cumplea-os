@@ -18,6 +18,7 @@ El conocimiento de esta carpeta se usa para:
 | Archivo | Fuente | Versión que lo incorporó |
 |---------|--------|--------------------------|
 | `claude-course-ebook.md` | Ebook "Claude Complete Course" — Wojtarowicz & Danelczyk | v1.1.0 |
+| `curated-repositories.md` | Selección curada de repositorios open-source por dominio | v1.2.0 |
 
 ## Cómo agregar conocimiento nuevo
 

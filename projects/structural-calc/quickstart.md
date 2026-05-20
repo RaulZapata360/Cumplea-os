@@ -31,6 +31,15 @@
 - [ ] Hipótesis y simplificaciones documentadas
 - [ ] Resultados con factores de seguridad explícitos
 
+## Repositorios de referencia
+
+| Repositorio | Para qué |
+|-------------|----------|
+| [PDAL/PDAL](https://github.com/PDAL/PDAL) | Filtrado de nubes de puntos LiDAR/fotogrametría/drones |
+| [IfcOpenShell/IfcOpenShell](https://github.com/IfcOpenShell/IfcOpenShell) | Extracción de volúmenes y parámetros desde modelos BIM/IFC |
+| [geopandas/geopandas](https://github.com/geopandas/geopandas) | Análisis geoespacial, áreas, distancias, transformación de coordenadas |
+
 ## Skills relevantes
 
-*(Agregar skills de cálculo cuando se creen)*
+- `pdf-generator` — generar memorias de cálculo en PDF desde Python
+- `pdf-reader` — extraer tablas y datos de planos y normativas en PDF
