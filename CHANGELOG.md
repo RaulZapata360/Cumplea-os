@@ -7,6 +7,25 @@ Todas las versiones siguen [Semantic Versioning](https://semver.org/):
 
 ---
 
+## [1.5.0] — 2026-05-21
+
+### Agregado
+- `docs/invasion-plan.md` — protocolo completo de 5 fases para adopción en proyectos externos:
+  Reconocimiento → Diagnóstico → Recomendación → Despliegue → Retroalimentación
+- `skills/project-advisor/` — skill nuevo (`context-aware-branching`) que ejecuta el diagnóstico
+  y entrega un plan de skills con formato estándar: primarios, mediano plazo, futuros, repos
+
+### Mejorado
+- `skills/index.yaml` — agrega `project-advisor` (skill 21, primer `context-aware-branching`)
+- `CLAUDE.md` — agrega regla de "invasión a proyectos nuevos" con referencia al protocolo
+
+### Contexto
+El repositorio ahora tiene su propio mecanismo de expansión: cuando Claude llega a un
+proyecto nuevo con acceso a este repo, el protocolo de invasión se activa automáticamente.
+El sistema se adopta solo, sin esperar que alguien pregunte qué skills existen.
+
+---
+
 ## [1.4.0] — 2026-05-21
 
 ### Agregado

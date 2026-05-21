@@ -165,7 +165,15 @@ skills:
     tags: [sop, documentación, operaciones, procesos, wiki, onboarding]
     instructions: skills/sop-standardizer/instructions.md
 
-  - id: example-deploy-vercel
+  - id: project-advisor
+    name: "Project Advisor"
+    description: "Analiza un proyecto nuevo y entrega un plan concreto de skills: cuáles usar, en qué orden y cómo integrar el repositorio. Activar al llegar a un proyecto externo, cuando alguien pregunta cómo aprovechar el repositorio, o cuando detectas dolor repetitivo sin sistema. Triggers: 'qué skills necesito', 'cómo uso el repositorio aquí', 'analiza este proyecto', 'qué me recomiendas para este stack'."
+    pattern: context-aware-branching
+    category: workflow-automation
+    tags: [onboarding, diagnóstico, recomendación, integración, invasión, adopción]
+    instructions: skills/project-advisor/instructions.md
+
+
     name: "Deploy a Vercel"
     description: "Despliega un proyecto estático o Next.js a Vercel usando CLI o MCP. Incluye configuración de vercel.json, manejo de env vars y verificación del deploy."
     pattern: sequential-workflow

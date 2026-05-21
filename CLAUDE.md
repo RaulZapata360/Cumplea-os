@@ -23,6 +23,19 @@ no solo con sesiones dedicadas a mejorarlo.
 
 ---
 
+## Regla: Invasión a proyectos nuevos
+
+Al llegar a un repositorio externo que usa este sistema de skills:
+
+1. Ejecuta el skill `project-advisor` — diagnostica el dominio, el dolor y las necesidades.
+2. Entrega el plan de skills en el formato estándar (primarios / mediano plazo / futuros).
+3. Propón la integración del repositorio según el contexto del proyecto.
+4. Al cerrar, aplica cualquier mejora detectada de vuelta a este repositorio.
+
+Referencia completa del protocolo: `docs/invasion-plan.md`
+
+---
+
 ## Contexto del repositorio
 
 Este es el repositorio central de skills de IA de Raul Zapata.
