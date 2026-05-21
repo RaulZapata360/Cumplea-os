@@ -208,3 +208,130 @@ A partir de estos repositorios, los siguientes skills tienen alta prioridad:
 ---
 
 *Próxima revisión: cuando se explore alguno de estos repositorios en profundidad.*
+
+---
+
+## 10. Diseño Web y Animaciones con Scroll (UI/UX Dinámico)
+
+| Repositorio | Stack | Qué enseña |
+|-------------|-------|-----------|
+| [darkroomengineering/lenis](https://github.com/darkroomengineering/lenis) | JS nativo | Smooth scrolling moderno y ligero; estándar en sitios Awwwards, integrado con API nativa del navegador |
+| [framer/motion](https://github.com/framer/motion) | React | Animaciones con físicas reales: transiciones de página, microinteracciones, `useScroll` para animaciones atadas a posición |
+| [locomotivemtl/locomotive-scroll](https://github.com/locomotivemtl/locomotive-scroll) | JS / CSS | Detección de elementos en viewport, parallax asíncrono, ideal para landing pages inmersivas |
+| [greensock/GSAP](https://github.com/greensock/GSAP) | JS | Motor de animación web más potente; ScrollTrigger orquesta secuencias complejas controladas por la rueda del ratón |
+| [pmndrs/drei](https://github.com/pmndrs/drei) | React / Three.js | Helpers para react-three-fiber: cámara, entornos HDRI, efectos 3D atados al scroll |
+
+### Notas de uso
+
+**lenis** — Reemplaza a opciones antiguas como LocomotiveScroll en proyectos nuevos.
+Estudiar para: scroll suave sin jank, integración con GSAP ScrollTrigger.
+
+**framer/motion** — La librería de animación estándar en el ecosistema React.
+Estudiar para: `AnimatePresence`, transiciones de layout, gestos táctiles, scroll-linked animations.
+
+**GSAP + ScrollTrigger** — Para secuencias de animación de nivel agencia/premiado.
+Estudiar para: timelines, scrubbing, pin de secciones, parallax multi-capa.
+
+**drei** — Simplifica react-three-fiber drásticamente.
+Estudiar para: integrar modelos 3D con scroll sin escribir código WebGL raw.
+
+---
+
+## 11. Dashboards Poderosos y Paneles de Gestión
+
+| Repositorio | Stack | Qué enseña |
+|-------------|-------|-----------|
+| [tremorlabs/tremor](https://github.com/tremorlabs/tremor) | React / Tailwind | Componentes de dashboard analítico: métricas, gráficas, KPIs financieros de forma rápida y elegante |
+| [refinedev/refine](https://github.com/refinedev/refine) | React | Framework para apps intensivas de datos: autenticación global, ruteo, conexiones nativas a Supabase / REST |
+| [marmelab/react-admin](https://github.com/marmelab/react-admin) | React | Framework empresarial back-office: CRUD masivo, consumo de REST/GraphQL, nivel de producción |
+| [ant-design/ant-design-pro](https://github.com/ant-design/ant-design-pro) | React / Ant Design | Solución corporativa lista para usar: permisos, tablas infinitas, formularios anidados |
+| [epicweb-dev/epic-stack](https://github.com/epicweb-dev/epic-stack) | Remix / SQLite | Stack full-stack con mejores prácticas: DB, auth, panels, seguridad y despliegue integrados |
+
+### Notas de uso
+
+**tremor** — El atajo más rápido para dashboards analíticos profesionales.
+Estudiar para: AreaChart, BarList, KPICard — componentes listos con semántica de negocio.
+
+**refine** — Para portales B2B y herramientas internas complejas.
+Estudiar para: data providers, RBAC (control de acceso por rol), hooks de CRUD con cualquier backend.
+
+**react-admin** — Cuando el cliente necesita un back-office de nivel enterprise sin construirlo desde cero.
+Estudiar para: `<Resource>`, `<DataGrid>`, autenticación y permisos granulares.
+
+**epic-stack** — Referencia de "la forma correcta" de hacer un proyecto full-stack moderno.
+Estudiar para: arquitectura completa, testing, observabilidad y flujo de despliegue.
+
+---
+
+## 12. Optimización de Tokens y Model Context Protocol (MCP)
+
+| Repositorio | Stack | Qué enseña |
+|-------------|-------|-----------|
+| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | Rust | Proxy CLI que reduce consumo de tokens 60-90%: agrupa, trunca y deduplica salidas de terminal antes del modelo |
+| [alexgreensh/token-optimizer](https://github.com/alexgreensh/token-optimizer) | TS / Claude Code | Plugin de dashboard de tokens en tiempo real: localiza tokens perdidos, sobrevive compactaciones, evita deterioro |
+| [ooples/token-optimizer-mcp](https://github.com/ooples/token-optimizer-mcp) | MCP | Servidor MCP que entrega resúmenes estructurales del código en lugar de archivos completos |
+| [affaan-m/ECC](https://github.com/affaan-m/ECC) | Claude Code | Arnés completo: memoria a largo plazo, reglas y estrategias agresivas de reducción de costos en investigación |
+| [microsoft/LLMLingua](https://github.com/microsoft/LLMLingua) | Python | Compresión de prompts a nivel investigación: elimina tokens redundantes sin perder semántica esencial |
+| [anthropics/anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook) | Python / Jupyter | Repositorio oficial Anthropic: prompts complejos, Tool Use, prompt caching y uso eficiente de la API |
+
+### Notas de uso
+
+**rtk** — Para sesiones largas de Claude Code donde el costo de tokens es preocupante.
+Estudiar para: arquitectura de proxies de contexto, compresión de salidas de terminal.
+
+**LLMLingua (Microsoft)** — Compresión algorítmica de prompts gigantes.
+Estudiar para: pipelines de RAG donde los documentos de contexto son demasiado largos.
+
+**anthropic-cookbook** — El mejor punto de partida para cualquier integración con la API de Claude.
+Estudiar para: prompt caching, batching, streaming, tool use estructurado.
+
+---
+
+## 13. Automatizaciones, Potenciadores y Flujos de IA
+
+| Repositorio | Stack | Qué enseña |
+|-------------|-------|-----------|
+| [langflow-ai/langflow](https://github.com/langflow-ai/langflow) | Python / React | GUI drag & drop para LangChain: prototipar agentes y sistemas RAG conectando nodos visualmente |
+| [langgenius/dify](https://github.com/langgenius/dify) | Python / Next.js | Plataforma completa LLM: flujos visuales, agentes, bases vectoriales y gestión de prompts en un lugar |
+| [FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise) | Node.js | Chatbots personalizados conectados a GitHub repos o PDFs; muy popular para RAG de documentos |
+| [mendableai/firecrawl](https://github.com/mendableai/firecrawl) | Python / TypeScript | Crawler web para IA: convierte sitios enteros en Markdown limpio, optimizado para inyección de contexto |
+| [activepieces/activepieces](https://github.com/activepieces/activepieces) | TypeScript | Alternativa open-source a Zapier: correos, tickets, CRMs, notificaciones sin licencias costosas |
+| [automatisch/automatisch](https://github.com/automatisch/automatisch) | TypeScript | Automatización auto-alojada con foco en privacidad: marketing y ventas sin enviar datos a terceros |
+
+### Notas de uso
+
+**langflow / dify / flowise** — El trío para prototipado visual de agentes IA.
+Estudiar para: entender cómo se conectan LLMs, herramientas, vectorstores y memoria en un flujo.
+Diferencia: Dify es el más completo (producción), Langflow el más educativo, Flowise el más rápido.
+
+**firecrawl** — Esencial cuando Claude necesita consumir contenido web como contexto.
+Estudiar para: scraping limpio → Markdown → inyección eficiente de tokens en el prompt.
+
+**activepieces / automatisch** — Alternativas a n8n y Zapier auto-alojadas.
+Estudiar para: automatizar procesos de negocio sin dependencia de servicios de terceros ni costos de licencia.
+
+---
+
+## Skills futuros identificados
+
+A partir de estos repositorios, los siguientes skills tienen alta prioridad:
+
+| Skill futuro | Patrón | Categoría | Fuente |
+|---|---|---|---|
+| `bim-ifc-extractor` | sequential-workflow | workflow-automation | IfcOpenShell |
+| `point-cloud-processor` | sequential-workflow | workflow-automation | PDAL |
+| `mcp-server-builder` | sequential-workflow | mcp-enhancement | mcp-for-beginners |
+| `react-pdf-generator` | sequential-workflow | document-creation | react-pdf |
+| `pdf-form-filler` | sequential-workflow | workflow-automation | pdf-lib |
+| `dag-workflow-builder` | sequential-workflow | workflow-automation | Airflow / Prefect |
+| `financial-dashboard` | context-aware-branching | document-creation | midday / ghostfolio |
+| `campaign-analytics` | sequential-workflow | workflow-automation | PostHog / dub |
+| `og-image-generator` | sequential-workflow | document-creation | satori |
+| `scroll-animation-guide` | domain-intelligence | mcp-enhancement | lenis / GSAP |
+| `rag-pipeline-builder` | multi-mcp-coordination | workflow-automation | firecrawl / dify |
+| `token-budget-monitor` | sequential-workflow | mcp-enhancement | LLMLingua / rtk |
+| `admin-panel-scaffold` | sequential-workflow | workflow-automation | refine / react-admin |
+
+---
+
+*Próxima revisión: cuando se explore alguno de estos repositorios en profundidad.*

@@ -30,11 +30,30 @@
 
 ## Repositorios de referencia
 
+### Orquestación y DAGs
 | Repositorio | Para qué |
 |-------------|----------|
 | [apache/airflow](https://github.com/apache/airflow) | DAGs, dependencias entre tareas, reintentos automáticos, ejecuciones programadas |
 | [n8n-io/n8n](https://github.com/n8n-io/n8n) | Automatización visual por nodos, iterar sobre arrays, conectar APIs y scripts |
 | [prefecthq/prefect](https://github.com/prefecthq/prefect) | Convertir funciones Python en pipelines resilientes y observables |
+
+### Flujos de IA y agentes
+| Repositorio | Para qué |
+|-------------|----------|
+| [langflow-ai/langflow](https://github.com/langflow-ai/langflow) | GUI drag & drop para LangChain: prototipar agentes y sistemas RAG visualmente |
+| [langgenius/dify](https://github.com/langgenius/dify) | Plataforma completa LLM: flujos, agentes, vectorstores, gestión de prompts |
+| [FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise) | Chatbots conectados a repos o PDFs; rápido para RAG de documentos |
+| [mendableai/firecrawl](https://github.com/mendableai/firecrawl) | Convierte sitios web en Markdown limpio para inyección eficiente de contexto |
+
+### Automatización de negocios
+| Repositorio | Para qué |
+|-------------|----------|
+| [activepieces/activepieces](https://github.com/activepieces/activepieces) | Alternativa open-source a Zapier: correos, tickets, CRMs sin licencias costosas |
+| [automatisch/automatisch](https://github.com/automatisch/automatisch) | Automatización auto-alojada con foco en privacidad: sin enviar datos a terceros |
+
+### MCP
+| Repositorio | Para qué |
+|-------------|----------|
 | [microsoft/mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) | Fundamentos MCP: arquitectura cliente-servidor, herramientas, recursos |
 | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Implementaciones de referencia: Google Drive, PostgreSQL, GitHub, filesystem |
 

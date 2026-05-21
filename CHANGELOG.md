@@ -7,6 +7,32 @@ Todas las versiones siguen [Semantic Versioning](https://semver.org/):
 
 ---
 
+## [1.4.0] — 2026-05-21
+
+### Agregado
+- `docs/references/curated-repositories.md` — 4 nuevos dominios (secciones 10-13), 22 repos:
+  - Animaciones y scroll: lenis, framer/motion, locomotive-scroll, GSAP, drei
+  - Dashboards y paneles: tremor, refine, react-admin, ant-design-pro, epic-stack
+  - Optimización de tokens/MCP: rtk, token-optimizer, token-optimizer-mcp, ECC, LLMLingua, anthropic-cookbook
+  - Flujos de IA: langflow, dify, Flowise, firecrawl, activepieces, automatisch
+- 4 nuevos skills futuros: `scroll-animation-guide`, `rag-pipeline-builder`,
+  `token-budget-monitor`, `admin-panel-scaffold`
+
+### Mejorado
+- `projects/web-design/quickstart.md` — reorganizado en 4 grupos con subs-tablas:
+  UI/Componentes, Animaciones, 3D e imágenes, Stack y frameworks
+- `projects/executive-dashboard/quickstart.md` — agrega tremor, refine, react-admin,
+  ant-design-pro; reorganizado en Componentes y Finanzas/Analítica
+- `projects/flow-programming/quickstart.md` — reorganizado en 4 grupos:
+  DAGs, Flujos de IA, Automatización de negocios, MCP
+
+### Contexto
+Tercera ronda de repositorios curados. El total pasa a 45 repos en 13 dominios.
+El repositorio cubre ahora: ingeniería, web, 3D, PDF, MCP, DAGs, finanzas,
+marketing, UI/UX, animaciones, dashboards, optimización de tokens y flujos de IA.
+
+---
+
 ## [1.3.0] — 2026-05-20
 
 ### Agregado
