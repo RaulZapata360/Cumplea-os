@@ -12,7 +12,224 @@
 
 skills:
 
-  - id: example-deploy-vercel
+  - id: pdf-generator
+    name: "PDF Generator"
+    description: "Genera documentos PDF profesionales (reportes, propuestas, memorias) desde texto, datos o markdown usando Python. Soporta reportlab para tablas/datos y weasyprint para layouts HTML/CSS. Incluye portada, secciones, tablas estilizadas y pie de página."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [pdf, python, reportlab, weasyprint, reportes, propuestas, documentos]
+    instructions: skills/pdf-generator/instructions.md
+
+  - id: pdf-reader
+    name: "PDF Reader"
+    description: "Extrae texto y tablas de cualquier PDF y los guarda como archivo .md estructurado. Soporta PDFs digitales (pdfplumber, pymupdf) y escaneados (OCR con pytesseract). El .md resultante es procesable por Claude u otros flujos."
+    pattern: sequential-workflow
+    category: workflow-automation
+    tags: [pdf, extracción, markdown, ocr, pdfplumber, pymupdf, tablas, lectura]
+    instructions: skills/pdf-reader/instructions.md
+
+  - id: writing-partner
+    name: "Writing Partner"
+    description: "Co-redacta artículos, blogs y newsletters en ciclos iterativos: outline → research → draft por sección → feedback → mejorar → repetir. Preserva la voz del escritor, agrega citas y entrega revisión final con checklist pre-publicación."
+    pattern: iterative-refinement
+    category: document-creation
+    tags: [escritura, blog, artículos, research, citas, feedback, newsletter, contenido]
+    instructions: skills/writing-partner/instructions.md
+
+  - id: meeting-notes-extractor
+    name: "Meeting Notes Extractor"
+    description: "Procesa transcripts de Zoom/Teams/Meet y genera actas profesionales en Word con tabla de action items (owner + deadline + status), decisiones clave y resumen de discusión usando Python/python-docx."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [meeting, actas, action-items, zoom, teams, word, python, transcript]
+    instructions: skills/meeting-notes-extractor/instructions.md
+
+  - id: cta-optimizer
+    name: "CTA Optimizer"
+    description: "Reescribe cualquier CTA débil para reducir fricción y aumentar conversión. Diagnostica la debilidad actual, identifica la etapa de relación y genera 5 variantes en espectro de fricción con recomendación razonada."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [cta, sales, copywriting, conversión, email, landing-page, fricción]
+    instructions: skills/cta-optimizer/instructions.md
+
+  - id: linkedin-post-generator
+    name: "LinkedIn Post Generator"
+    description: "Redacta posts de LinkedIn de alto engagement usando patrones probados: hooks de historia personal, formato demo, pain points relacionables. Incluye checklist pre-publicación y anti-patrones a evitar."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [linkedin, social-media, copywriting, contenido, engagement, posts]
+    instructions: skills/linkedin-post-generator/instructions.md
+
+  - id: ab-copy-variants-generator
+    name: "A/B Copy Variants Generator"
+    description: "Genera 5 variantes de copy testables para cualquier elemento de marketing (subject lines, headlines, CTAs, ads). Cada variante prueba un lever distinto con hipótesis falsificable. Incluye sample size y apuesta ganadora."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [marketing, copywriting, ab-testing, conversion, email, ads, cta]
+    instructions: skills/ab-copy-variants-generator/instructions.md
+
+  - id: hook-engineer
+    name: "Hook Engineer"
+    description: "Genera 10 hooks scroll-stopping para LinkedIn, email, blog o ads. Cada hook usa un mecanismo psicológico distinto. Puntúa todos y marca los top 3 con justificación."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [marketing, copywriting, hooks, linkedin, email, contenido, atención]
+    instructions: skills/hook-engineer/instructions.md
+
+  - id: seo-intent-analyzer
+    name: "SEO Intent Analyzer"
+    description: "Analiza el search intent de cualquier keyword y produce un content brief completo: tipo de contenido, formato, ángulo, outline H1/H2/H3 y keywords semánticas alineadas con lo que Google premia."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [seo, keywords, content-brief, search-intent, serp, outline]
+    instructions: skills/seo-intent-analyzer/instructions.md
+
+  - id: content-optimizer
+    name: "Content Optimizer"
+    description: "Audita y optimiza cualquier contenido para SEO on-page. Verifica keyword density, meta tags, estructura de headings y legibilidad. Entrega: audit con severidad + correcciones + checklist completa."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [seo, on-page, meta-tags, headings, readability, keyword, audit]
+    instructions: skills/content-optimizer/instructions.md
+
+  - id: csv-to-presentations
+    name: "CSV to Presentations"
+    description: "Convierte datos tabulares (CSV/Excel) en presentaciones PowerPoint profesionales con tablas y gráficas usando Python/python-pptx. Ideal para reportes trimestrales y executive summaries."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [python, pptx, powerpoint, datos, reportes, gráficas, csv, excel]
+    instructions: skills/csv-to-presentations/instructions.md
+
+  - id: career-ladder-builder
+    name: "Career Ladder Builder"
+    description: "Construye un framework de 4 niveles de progresión profesional para cualquier rol con descripciones de comportamiento por nivel. Incluye 'What this level is NOT' para evitar grade inflation y matriz resumen."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [hr, career-ladder, performance, roles, promoción, comportamiento, equidad]
+    instructions: skills/career-ladder-builder/instructions.md
+
+  - id: campaign-retrospective-builder
+    name: "Campaign Retrospective Builder"
+    description: "Facilita retrospectivas de campañas de marketing con análisis de causa raíz (5 Whys) por canal/creatividad/audiencia. Entrega: qué matar, qué mantener, qué escalar y 3 hipótesis para la siguiente iteración."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [marketing, retrospectiva, campañas, análisis, 5-whys, hipótesis, roi]
+    instructions: skills/campaign-retrospective-builder/instructions.md
+
+  - id: decision-logger
+    name: "Decision Logger"
+    description: "Documenta cualquier decisión importante como un Decision Record formal para wiki de equipo. Captura contexto, opciones rechazadas, trade-offs y condiciones de revisión para preservar el razonamiento."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [documentación, decisiones, wiki, equipo, arquitectura, operaciones]
+    instructions: skills/decision-logger/instructions.md
+
+  - id: partnership-proposal-writer
+    name: "Partnership Proposal Writer"
+    description: "Redacta respuestas y cold outreach de partnerships para Krystian Wojtarowicz / DFA Course Academy. Conoce los números exactos de reach, perfil de audiencia, menú de colaboraciones y deal structure preferido."
+    pattern: domain-intelligence
+    category: document-creation
+    tags: [partnership, sponsorship, outreach, email, brand, creator, saas]
+    instructions: skills/partnership-proposal-writer/instructions.md
+    files: skills/partnership-proposal-writer/files/
+
+  - id: youtube-thumbnail-designer
+    name: "YouTube Thumbnail Designer"
+    description: "Diseña thumbnails de YouTube de alta conversión como PNG. Cubre contexto, estrategia de layout, reglas de diseño por nicho y renderizado con Python/Pillow. Siempre itera con feedback del usuario."
+    pattern: iterative-refinement
+    category: document-creation
+    tags: [youtube, thumbnail, diseño, visual, png, pillow, python, imagen]
+    instructions: skills/youtube-thumbnail-designer/instructions.md
+
+  - id: job-description-optimizer
+    name: "Job Description Optimizer"
+    description: "Audita y reescribe descripciones de empleo para atraer A-players. Detecta requirement inflation, salary opacity y buzzwords, luego reescribe con lenguaje de outcomes. Entrega: audit + JD reescrito + changelog."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [hr, recruiting, job-description, hiring, talent, outcomes]
+    instructions: skills/job-description-optimizer/instructions.md
+
+  - id: metric-explainer
+    name: "Metric Explainer"
+    description: "Explica cualquier métrica financiera o SaaS en lenguaje simple con benchmarks por etapa, red flags, levers de mejora y veredicto (healthy/watch/concerning/critical) si el usuario provee su número."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [métricas, finanzas, saas, kpi, benchmarks, cfo, análisis]
+    instructions: skills/metric-explainer/instructions.md
+
+  - id: sop-standardizer
+    name: "SOP Standardizer"
+    description: "Convierte notas sueltas, brain dumps o pasos en borrador en un SOP formal y ejecutable listo para wiki de empresa. Incluye quick reference de una página."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [sop, documentación, operaciones, procesos, wiki, onboarding]
+    instructions: skills/sop-standardizer/instructions.md
+
+  - id: mermaid-expert
+    name: "Mermaid Expert"
+    description: "Genera diagramas técnicos (flujos, secuencias, entidades, clases) con sintaxis Mermaid. Evalúa cuándo Mermaid es suficiente vs cuándo escalar a SVG crudo. Activa cuando necesites un diagrama de arquitectura, flujo de proceso, modelo de datos o secuencia de comunicación. Triggers: 'crea un diagrama', 'flowchart', 'diagrama de secuencia', 'modelo entidad-relación', 'arquitectura del sistema'."
+    pattern: domain-intelligence
+    category: document-creation
+    tags: [mermaid, diagramas, flowchart, secuencia, entidad-relacion, arquitectura, visualización]
+    instructions: skills/mermaid-expert/instructions.md
+
+  - id: canvas-design
+    name: "Canvas Design"
+    description: "Diseña layouts SVG 2D técnicos con coordenadas precisas usando variables de escala, bounding boxes y grupos con transform. Resuelve el problema de coordenadas absolutas mal calculadas. Usar para planos, perfiles, cotas y cualquier layout técnico vectorial. Triggers: 'diseña un plano SVG', 'layout técnico', 'perfil transversal', 'sección con cotas', 'diagrama con medidas'."
+    pattern: iterative-refinement
+    category: document-creation
+    tags: [svg, canvas, 2d, coordenadas, bounding-box, planos, cotas, vectorial, CAD]
+    instructions: skills/canvas-design/instructions.md
+
+  - id: algorithmic-art
+    name: "Algorithmic Art"
+    description: "Genera SVG técnico usando fórmulas matemáticas y patterns repetitivos en lugar de coordenadas hardcodeadas. Ideal para sombreado de materiales (concreto, suelo, acero), acero de refuerzo, capas de suelo y cualquier elemento que se repite con lógica geométrica. Triggers: 'genera el patrón de refuerzo', 'sombrea el concreto', 'dibuja las barras de acero', 'perfil de terreno', 'textura de material'."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [svg, algoritmos, patrones, matemáticas, generativo, escala, CAD, refuerzo, materiales]
+    instructions: skills/algorithmic-art/instructions.md
+
+  - id: web-artifacts-builder
+    name: "Web Artifacts Builder"
+    description: "Genera SVG y componentes HTML/CSS semánticamente correctos con estructura de capas, defs, patterns y CSS embebido. Asegura que el SVG no se rompa al moverlo entre web, PDF o Notion. Usar cuando necesites SVG de producción limpio y portable. Triggers: 'genera el SVG completo', 'componente web limpio', 'artefacto interactivo', 'SVG para exportar'."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [svg, html, css, semántica, defs, pattern, componentes, web, portable]
+    instructions: skills/web-artifacts-builder/instructions.md
+
+  - id: core-components
+    name: "Core Components"
+    description: "Construye bibliotecas de bloques CAD reutilizables en SVG usando symbol y use. Define apoyos, cimentaciones, perfiles estructurales y barras de refuerzo una vez y los instancia en cualquier posición y escala. Triggers: 'crea los bloques del plano', 'biblioteca de símbolos CAD', 'apoyo fijo SVG', 'perfil IPN en SVG', 'símbolo reutilizable'."
+    pattern: domain-intelligence
+    category: workflow-automation
+    tags: [svg, CAD, symbol, use, bloques, reutilizable, biblioteca, estructural, planos]
+    instructions: skills/core-components/instructions.md
+
+  - id: svg-to-pdf
+    name: "SVG to PDF"
+    description: "Convierte SVG técnicos a PDF sin romper líneas, fuentes ni proporciones. Diagnostica y corrige los 5 problemas más comunes: fuentes sustituidas, líneas invisibles, coordenadas cortadas, fondo negro, gradientes rasterizados. Soporta cairosvg, Puppeteer e Inkscape CLI. Triggers: 'exporta el SVG a PDF', 'el PDF sale roto', 'las líneas desaparecen en PDF', 'fuente incorrecta en PDF'."
+    pattern: sequential-workflow
+    category: workflow-automation
+    tags: [svg, pdf, conversión, vectorial, viewbox, fuentes, cairosvg, puppeteer, inkscape]
+    instructions: skills/svg-to-pdf/instructions.md
+
+  - id: ui-visual-validator
+    name: "UI Visual Validator"
+    description: "Audita SVG o componentes HTML/CSS antes de renderizar o exportar. Detecta stroke-width cero, coordenadas fuera del viewBox, IDs duplicados, referencias rotas a defs y fondo transparente. Entrega reporte con errores críticos, advertencias y acciones concretas. Triggers: 'valida el SVG', 'audita el componente', 'algo se ve mal', 'revisa antes de exportar', 'chequea el SVG'."
+    pattern: sequential-workflow
+    category: workflow-automation
+    tags: [svg, validación, audit, ui, visual, errores, calidad, pre-export, diagnóstico]
+    instructions: skills/ui-visual-validator/instructions.md
+
+
+    name: "Project Advisor"
+    description: "Analiza un proyecto nuevo y entrega un plan concreto de skills: cuáles usar, en qué orden y cómo integrar el repositorio. Activar al llegar a un proyecto externo, cuando alguien pregunta cómo aprovechar el repositorio, o cuando detectas dolor repetitivo sin sistema. Triggers: 'qué skills necesito', 'cómo uso el repositorio aquí', 'analiza este proyecto', 'qué me recomiendas para este stack'."
+    pattern: context-aware-branching
+    category: workflow-automation
+    tags: [onboarding, diagnóstico, recomendación, integración, invasión, adopción]
+    instructions: skills/project-advisor/instructions.md
+
+
     name: "Deploy a Vercel"
     description: "Despliega un proyecto estático o Next.js a Vercel usando CLI o MCP. Incluye configuración de vercel.json, manejo de env vars y verificación del deploy."
     pattern: sequential-workflow
