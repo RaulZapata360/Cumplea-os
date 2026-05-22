@@ -165,7 +165,63 @@ skills:
     tags: [sop, documentación, operaciones, procesos, wiki, onboarding]
     instructions: skills/sop-standardizer/instructions.md
 
-  - id: project-advisor
+  - id: mermaid-expert
+    name: "Mermaid Expert"
+    description: "Genera diagramas técnicos (flujos, secuencias, entidades, clases) con sintaxis Mermaid. Evalúa cuándo Mermaid es suficiente vs cuándo escalar a SVG crudo. Activa cuando necesites un diagrama de arquitectura, flujo de proceso, modelo de datos o secuencia de comunicación. Triggers: 'crea un diagrama', 'flowchart', 'diagrama de secuencia', 'modelo entidad-relación', 'arquitectura del sistema'."
+    pattern: domain-intelligence
+    category: document-creation
+    tags: [mermaid, diagramas, flowchart, secuencia, entidad-relacion, arquitectura, visualización]
+    instructions: skills/mermaid-expert/instructions.md
+
+  - id: canvas-design
+    name: "Canvas Design"
+    description: "Diseña layouts SVG 2D técnicos con coordenadas precisas usando variables de escala, bounding boxes y grupos con transform. Resuelve el problema de coordenadas absolutas mal calculadas. Usar para planos, perfiles, cotas y cualquier layout técnico vectorial. Triggers: 'diseña un plano SVG', 'layout técnico', 'perfil transversal', 'sección con cotas', 'diagrama con medidas'."
+    pattern: iterative-refinement
+    category: document-creation
+    tags: [svg, canvas, 2d, coordenadas, bounding-box, planos, cotas, vectorial, CAD]
+    instructions: skills/canvas-design/instructions.md
+
+  - id: algorithmic-art
+    name: "Algorithmic Art"
+    description: "Genera SVG técnico usando fórmulas matemáticas y patterns repetitivos en lugar de coordenadas hardcodeadas. Ideal para sombreado de materiales (concreto, suelo, acero), acero de refuerzo, capas de suelo y cualquier elemento que se repite con lógica geométrica. Triggers: 'genera el patrón de refuerzo', 'sombrea el concreto', 'dibuja las barras de acero', 'perfil de terreno', 'textura de material'."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [svg, algoritmos, patrones, matemáticas, generativo, escala, CAD, refuerzo, materiales]
+    instructions: skills/algorithmic-art/instructions.md
+
+  - id: web-artifacts-builder
+    name: "Web Artifacts Builder"
+    description: "Genera SVG y componentes HTML/CSS semánticamente correctos con estructura de capas, defs, patterns y CSS embebido. Asegura que el SVG no se rompa al moverlo entre web, PDF o Notion. Usar cuando necesites SVG de producción limpio y portable. Triggers: 'genera el SVG completo', 'componente web limpio', 'artefacto interactivo', 'SVG para exportar'."
+    pattern: sequential-workflow
+    category: document-creation
+    tags: [svg, html, css, semántica, defs, pattern, componentes, web, portable]
+    instructions: skills/web-artifacts-builder/instructions.md
+
+  - id: core-components
+    name: "Core Components"
+    description: "Construye bibliotecas de bloques CAD reutilizables en SVG usando symbol y use. Define apoyos, cimentaciones, perfiles estructurales y barras de refuerzo una vez y los instancia en cualquier posición y escala. Triggers: 'crea los bloques del plano', 'biblioteca de símbolos CAD', 'apoyo fijo SVG', 'perfil IPN en SVG', 'símbolo reutilizable'."
+    pattern: domain-intelligence
+    category: workflow-automation
+    tags: [svg, CAD, symbol, use, bloques, reutilizable, biblioteca, estructural, planos]
+    instructions: skills/core-components/instructions.md
+
+  - id: svg-to-pdf
+    name: "SVG to PDF"
+    description: "Convierte SVG técnicos a PDF sin romper líneas, fuentes ni proporciones. Diagnostica y corrige los 5 problemas más comunes: fuentes sustituidas, líneas invisibles, coordenadas cortadas, fondo negro, gradientes rasterizados. Soporta cairosvg, Puppeteer e Inkscape CLI. Triggers: 'exporta el SVG a PDF', 'el PDF sale roto', 'las líneas desaparecen en PDF', 'fuente incorrecta en PDF'."
+    pattern: sequential-workflow
+    category: workflow-automation
+    tags: [svg, pdf, conversión, vectorial, viewbox, fuentes, cairosvg, puppeteer, inkscape]
+    instructions: skills/svg-to-pdf/instructions.md
+
+  - id: ui-visual-validator
+    name: "UI Visual Validator"
+    description: "Audita SVG o componentes HTML/CSS antes de renderizar o exportar. Detecta stroke-width cero, coordenadas fuera del viewBox, IDs duplicados, referencias rotas a defs y fondo transparente. Entrega reporte con errores críticos, advertencias y acciones concretas. Triggers: 'valida el SVG', 'audita el componente', 'algo se ve mal', 'revisa antes de exportar', 'chequea el SVG'."
+    pattern: sequential-workflow
+    category: workflow-automation
+    tags: [svg, validación, audit, ui, visual, errores, calidad, pre-export, diagnóstico]
+    instructions: skills/ui-visual-validator/instructions.md
+
+
     name: "Project Advisor"
     description: "Analiza un proyecto nuevo y entrega un plan concreto de skills: cuáles usar, en qué orden y cómo integrar el repositorio. Activar al llegar a un proyecto externo, cuando alguien pregunta cómo aprovechar el repositorio, o cuando detectas dolor repetitivo sin sistema. Triggers: 'qué skills necesito', 'cómo uso el repositorio aquí', 'analiza este proyecto', 'qué me recomiendas para este stack'."
     pattern: context-aware-branching

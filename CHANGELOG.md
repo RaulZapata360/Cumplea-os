@@ -7,6 +7,33 @@ Todas las versiones siguen [Semantic Versioning](https://semver.org/):
 
 ---
 
+## [1.6.0] — 2026-05-21
+
+### Agregado — 7 skills para SVG técnico y exportación a PDF
+
+| Skill | Patrón | Categoría |
+|-------|--------|-----------|
+| `mermaid-expert` | domain-intelligence | document-creation |
+| `canvas-design` | iterative-refinement | document-creation |
+| `algorithmic-art` | sequential-workflow | document-creation |
+| `web-artifacts-builder` | sequential-workflow | document-creation |
+| `core-components` | domain-intelligence | workflow-automation |
+| `svg-to-pdf` | sequential-workflow | workflow-automation |
+| `ui-visual-validator` | sequential-workflow | workflow-automation |
+
+### Cobertura nueva
+- **Precisión geométrica CAD:** canvas-design (coordenadas con escala variable) + algorithmic-art (patterns y fórmulas para materiales)
+- **Estructura SVG correcta:** web-artifacts-builder (defs, style, capas) + core-components (symbol/use, bloques reutilizables)
+- **Pipeline de exportación:** svg-to-pdf (5 problemas frecuentes + herramientas) + ui-visual-validator (auditoría pre-export)
+- **Diagramas de arquitectura:** mermaid-expert (flowchart, sequence, erDiagram, classDiagram)
+
+### Contexto
+Skills orientados al dominio de ingeniería y planos técnicos. Resuelven los tres dolores
+principales con SVG en LLMs: coordenadas incorrectas, estructura semántica rota y
+conversión a PDF con pérdida de información visual.
+
+---
+
 ## [1.5.0] — 2026-05-21
 
 ### Agregado
