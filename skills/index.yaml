@@ -165,7 +165,15 @@ skills:
     tags: [sop, documentación, operaciones, procesos, wiki, onboarding]
     instructions: skills/sop-standardizer/instructions.md
 
-  - id: mermaid-expert
+  - id: gsap-animator
+    name: "GSAP Animator"
+    description: "Genera animaciones web con GSAP: tweens, timelines secuenciadas y animaciones vinculadas a scroll con ScrollTrigger. Incluye variaciones para React (useGSAP), Vue/Svelte (gsap.context) y vanilla JS. Activa cuando el proyecto necesite secuencias de animación complejas, scroll-driven animation o pinning de secciones. Triggers: 'anima esto con GSAP', 'crea un timeline', 'animación al hacer scroll', 'ScrollTrigger', 'pin de sección'."
+    pattern: domain-intelligence
+    category: document-creation
+    tags: [gsap, animación, scroll, scrolltrigger, timeline, react, vue, svelte, web-design]
+    instructions: skills/gsap-animator/instructions.md
+
+
     name: "Mermaid Expert"
     description: "Genera diagramas técnicos (flujos, secuencias, entidades, clases) con sintaxis Mermaid. Evalúa cuándo Mermaid es suficiente vs cuándo escalar a SVG crudo. Activa cuando necesites un diagrama de arquitectura, flujo de proceso, modelo de datos o secuencia de comunicación. Triggers: 'crea un diagrama', 'flowchart', 'diagrama de secuencia', 'modelo entidad-relación', 'arquitectura del sistema'."
     pattern: domain-intelligence

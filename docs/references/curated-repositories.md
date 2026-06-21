@@ -219,6 +219,7 @@ A partir de estos repositorios, los siguientes skills tienen alta prioridad:
 | [framer/motion](https://github.com/framer/motion) | React | Animaciones con físicas reales: transiciones de página, microinteracciones, `useScroll` para animaciones atadas a posición |
 | [locomotivemtl/locomotive-scroll](https://github.com/locomotivemtl/locomotive-scroll) | JS / CSS | Detección de elementos en viewport, parallax asíncrono, ideal para landing pages inmersivas |
 | [greensock/GSAP](https://github.com/greensock/GSAP) | JS | Motor de animación web más potente; ScrollTrigger orquesta secuencias complejas controladas por la rueda del ratón |
+| [greensock/gsap-skills](https://github.com/greensock/gsap-skills) | SKILL.md | Skills oficiales de IA para GSAP — base directa del skill `gsap-animator` |
 | [pmndrs/drei](https://github.com/pmndrs/drei) | React / Three.js | Helpers para react-three-fiber: cámara, entornos HDRI, efectos 3D atados al scroll |
 
 ### Notas de uso
@@ -231,6 +232,11 @@ Estudiar para: `AnimatePresence`, transiciones de layout, gestos táctiles, scro
 
 **GSAP + ScrollTrigger** — Para secuencias de animación de nivel agencia/premiado.
 Estudiar para: timelines, scrubbing, pin de secciones, parallax multi-capa.
+
+**gsap-skills (oficial GreenSock)** — Repositorio de skills de IA ya estructurado en formato
+SKILL.md, mantenido por el equipo creador de GSAP. Condensado directamente en nuestro
+skill `gsap-animator` (gsap-core + gsap-timeline + gsap-scrolltrigger). Para plugins
+adicionales (Flip, Draggable, SplitText, físicos) o utilidades, consultar el repo original.
 
 **drei** — Simplifica react-three-fiber drásticamente.
 Estudiar para: integrar modelos 3D con scroll sin escribir código WebGL raw.
@@ -327,7 +333,6 @@ A partir de estos repositorios, los siguientes skills tienen alta prioridad:
 | `financial-dashboard` | context-aware-branching | document-creation | midday / ghostfolio |
 | `campaign-analytics` | sequential-workflow | workflow-automation | PostHog / dub |
 | `og-image-generator` | sequential-workflow | document-creation | satori |
-| `scroll-animation-guide` | domain-intelligence | mcp-enhancement | lenis / GSAP |
 | `rag-pipeline-builder` | multi-mcp-coordination | workflow-automation | firecrawl / dify |
 | `token-budget-monitor` | sequential-workflow | mcp-enhancement | LLMLingua / rtk |
 | `admin-panel-scaffold` | sequential-workflow | workflow-automation | refine / react-admin |

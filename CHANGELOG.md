@@ -7,6 +7,32 @@ Todas las versiones siguen [Semantic Versioning](https://semver.org/):
 
 ---
 
+## [1.7.0] — 2026-06-21
+
+### Agregado
+- `skills/gsap-animator` — skill `domain-intelligence` para animaciones web con GSAP:
+  tweens, timelines, ScrollTrigger, con variaciones para React (`useGSAP`), Vue/Svelte
+  (`gsap.context`) y vanilla JS
+- Condensado directamente del repositorio oficial
+  [greensock/gsap-skills](https://github.com/greensock/gsap-skills) (gsap-core +
+  gsap-timeline + gsap-scrolltrigger)
+
+### Mejorado
+- `docs/references/curated-repositories.md` — agrega `gsap-skills` en sección 10,
+  marcado como fuente directa del nuevo skill; elimina `scroll-animation-guide` de
+  skills futuros (ya implementado como `gsap-animator`)
+- `skills/index.yaml` — agrega `gsap-animator` (skill 29)
+- `projects/web-design/quickstart.md` — agrega `gsap-animator` y `web-artifacts-builder`
+  a skills relevantes
+
+### Contexto
+Primer caso de un repositorio externo de skills (no solo código) evaluado e incorporado
+directamente al sistema. `gsap-skills` ya seguía un formato casi idéntico al nuestro
+(frontmatter, un tema por archivo, sección de anti-patrones), lo que confirma que la
+convención de Progressive Disclosure es un estándar emergente más allá de este repositorio.
+
+---
+
 ## [1.6.0] — 2026-05-21
 
 ### Agregado — 7 skills para SVG técnico y exportación a PDF

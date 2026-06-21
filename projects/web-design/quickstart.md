@@ -69,3 +69,5 @@
 ## Skills relevantes
 
 - `example-deploy-vercel` — deploy a Vercel paso a paso
+- `gsap-animator` — animaciones con GSAP: tweens, timelines, ScrollTrigger
+- `web-artifacts-builder` — componentes SVG/HTML semánticamente correctos
